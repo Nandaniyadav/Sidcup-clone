@@ -17,7 +17,7 @@ html, body
     width:100%;
     /* background-color:red; */
     display:flex;
-    align-item:center;
+    align-items:center;
     padding:0px 150px;
     gap:50px;
     position:fixd;
@@ -39,4 +39,19 @@ video
     width:100%;
     object-fit:cover;
     position:fixed;
+}
+#main
+{
+position:relative;
+background-color:rgba(0, 0, 0, 0.37);
+}
+#page1
+{
+    height:100vh;
+    weight:100%;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
 }
