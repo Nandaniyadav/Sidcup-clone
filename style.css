@@ -19,7 +19,7 @@ body {
     align-items: center;
     padding: 0px 150px;
     gap: 50px;
-    position: fixd;
+    position: fixed;
     justify-content: flex-start;
     z-index: 999;
 }
@@ -32,7 +32,7 @@ body {
     text-transform: uppercase;
     font-weight: 500;
     cursor: pointer;
-  font-size: 1.15vw;
+    font-size: 1.15vw;
 }
 
 video {
@@ -69,8 +69,8 @@ video {
     content: "EAT. DRINK. PLAY.";
     position: absolute;
     color: #000;
-    top: -4px;
-    left: -4px;
+    top: -6px;
+    left: -6px;
     -webkit-text-stroke: 2px #95C11E;
     z-index: -1;
 }
@@ -86,4 +86,9 @@ video {
     font-size: 20px;
     font-weight: 500;
     width: 40%;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
 }
