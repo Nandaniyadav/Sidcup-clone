@@ -11,6 +11,14 @@ body {
     height: 100%;
     width: 100%;
 }
+#cursor{
+    height: 25px;
+    width: 25px;
+    background-color: #95C11E;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
 
 #nav {
     height: 130px;
