@@ -201,6 +201,8 @@ video {
     align-items: center;
     justify-content: center;
     gap: 70px;
+    position: relative;
+    z-index: 10;
 }
 .card
 {
@@ -210,6 +212,8 @@ video {
     border-radius: 10px;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+    transition: all ease-in 0.6s;
 }
 #card1
 {
@@ -222,4 +226,58 @@ video {
 #card3
 {
     background-image: url(images/card3.avif);
+}
+.overlay
+{
+    height: 100%;
+    width: 100%;
+    background-color: #95C11E;
+    padding: 30px;
+    padding-top: 160px;
+    opacity: 0;
+    transition: all ease-in 0.6s;
+
+}
+.overlay h4
+{
+    color: #000;
+    font-size: 40px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+.overlay p{
+    color: #000;
+    font-size: 18px;
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+.card:hover{
+    transform: rotate3d(1,1,0,20deg);
+}
+#green-div
+{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    background: linear-gradient(red,blue);
+}
+#green-div h4{
+    width: 45%;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+#green-div img{
+    height: 100%;
+    object-fit: cover;
+    width: 14%;
+
+    
 }
