@@ -110,7 +110,7 @@ video {
 }
 
 #page2 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 #scroller
@@ -119,6 +119,8 @@ video {
     white-space: nowrap;
     overflow-x:auto ;
     overflow-y: hidden;
+    position: relative;
+    z-index: 10;
 }
 #scroller::-webkit-scrollbar{
     display: none;
@@ -128,7 +130,7 @@ video {
     display: inline-block;
     white-space: nowrap;
     animation-name: scroll;
-    animation-duration: 20s;
+    animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 
@@ -136,12 +138,17 @@ video {
 
 #scroller h4{
     display: inline-block;
-    font-size: 140px;
+    font-size: 120px;
     font-weight: 900;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-right: 10px;
     color: transparent;
+    transition: all linear 0.5;
     -webkit-text-stroke: 2px #95C11E;
+}
+#scroller h4:hover
+{
+    color: #95C11E;
 }
 
 @keyframes scroll{
@@ -151,4 +158,68 @@ video {
     to{
         transform: translateX(-100%);
     }
+}
+
+#about-us
+{
+    height: 40vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+    position: relative;
+}
+#about-us img{
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+#about-us-in
+{
+    width: 40%;
+    text-align: center;
+}
+#about-us-in h3{
+    font-size: 55px;
+    font-weight: 800;
+    margin-bottom: 40px;
+
+}
+#about-us-in p{
+    font-size: 20px;
+    line-height: 26px;
+}
+#cards-container
+{
+    height: 60vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.card
+{
+    height: 80%;
+    width: 24%;
+    /* background-color: blue; */
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+#card1
+{
+    background-image: url(images/card1.avif);
+}
+#card2
+{
+    background-image: url(images/card2.webp);
+}
+#card3
+{
+    background-image: url(images/card3.avif);
 }
